@@ -1,0 +1,50 @@
+<html>
+    <head>
+        <title>Rafli Store</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Material+Icons&family=Material+Icons+Outlined&family=Material+Icons+Round&family=Material+Icons+Sharp&family=Material+Icons+Two+Tone" rel="stylesheet"/>
+        <link rel="stylesheet" href="../styles/global.css"/>
+        <link rel="stylesheet" href="../styles/detail.css"/>
+        <script src="../scripts/detail.js"></script>
+    </head>
+  <body>
+    <header class="navbar">
+        <div class="navbar-left-menu">
+            <h1 class="logo">Rafly Store.</h1>
+        </div>
+        <div class="navbar-right-menu">
+            <span class="material-icons-outlined" style="font-size: 36px;">
+                shopping_cart
+            </span>
+        </div>
+    </header>
+
+    <div class="section-container">
+        <div class="main-product-image-container">
+            <img id="product-image" class="main-product-image" src="" alt="gambar produk" style="width: 100%; max-width: 200px;">
+        </div>
+
+        <div class="main-product-info-container">
+            <h1 id="product-name" style="font-size: 36px;"></h1>
+            <div id="product-price" style="font-size: 36px;"></div>
+            <hr />
+
+            <label>Jumlah:</label>
+            <div style="display: flex; gap: 1rem; align-items: center; margin-bottom: 1rem;">
+                <button class="secondary-btn" id="decrease-btn">-</button>
+                <span id="counter-value" style="font-size: 48px;">1</span>
+                <button class="secondary-btn" id="increase-btn">+</button>
+            </div>
+
+            <div class="total-container" style="margin-bottom: 1rem;">
+                <p style="font-size: 36px;"><strong>Total Rp:</strong> <span id="total-rp" style="font-size: 36px;">Rp 0</span></p>
+                <p style="font-size: 36px;"><strong>Total RM:</strong> <span id="total-rm" style="font-size: 36px;">RM 0.00</span></p>
+            </div>
+
+            <button class="contain-btn" id="whatsapp-btn">Payment via WhatsApp</button>
+        </div>
+    </div>
+</body>
+</html>
